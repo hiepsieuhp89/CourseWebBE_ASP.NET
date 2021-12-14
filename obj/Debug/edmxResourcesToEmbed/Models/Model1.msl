@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="CourseDBContext">
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="Model.course">
+        <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="courseId" ColumnName="courseId" />
+          <ScalarProperty Name="courseName" ColumnName="courseName" />
+          <ScalarProperty Name="courseCode" ColumnName="courseCode" />
+          <ScalarProperty Name="courseDescription" ColumnName="courseDescription" />
+          <ScalarProperty Name="courseYear" ColumnName="courseYear" />
+          <ScalarProperty Name="courseActor" ColumnName="courseActor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
