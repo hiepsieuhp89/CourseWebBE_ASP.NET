@@ -13,10 +13,10 @@ namespace CourseWebApp.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class NSchoolDBContext : DbContext
+    public partial class NSchoolEntities : DbContext
     {
-        public NSchoolDBContext()
-            : base("name=NSchoolDBContext")
+        public NSchoolEntities()
+            : base("name=NSchoolEntities")
         {
         }
     

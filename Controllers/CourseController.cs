@@ -17,20 +17,20 @@ namespace CourseWebApp.Controllers
         //[EnableCors(origins: "*", headers: "*", methods: "*")]
         public IEnumerable<cours> Get() {
 
-            NSchoolDBContext dbContext = new NSchoolDBContext();
+            NSchoolEntities dbContext = new NSchoolEntities();
 
             return dbContext.courses.OrderByDescending(e => e.id).ToList();
         }
         public IEnumerable<cours> Get([FromQuery(Name = "keyword")] string keyword)
         {
-            NSchoolDBContext dbContext = new NSchoolDBContext();
+            NSchoolEntities dbContext = new NSchoolEntities();
             if(keyword != "")
                 return dbContext.courses.Where(e => e.name.Contains(keyword) || e.actor.Contains(keyword) || e.code.Contains(keyword)).OrderByDescending(e => e.id).ToList();
             return dbContext.courses.OrderByDescending(e => e.id).ToList();
         }
         public cours Get(int id)
         {
-            NSchoolDBContext dbContext = new NSchoolDBContext();
+            NSchoolEntities dbContext = new NSchoolEntities();
 
             return dbContext.courses.FirstOrDefault(e => e.id == id);
         }
@@ -38,7 +38,7 @@ namespace CourseWebApp.Controllers
         {
             try
             {
-                NSchoolDBContext dbContext = new NSchoolDBContext();
+                NSchoolEntities dbContext = new NSchoolEntities();
 
                 JavaScriptSerializer json_serializer = new JavaScriptSerializer();
 
@@ -60,7 +60,7 @@ namespace CourseWebApp.Controllers
         {
             try
             {
-                NSchoolDBContext dbContext = new NSchoolDBContext();
+                NSchoolEntities dbContext = new NSchoolEntities();
 
                 JavaScriptSerializer json_serializer = new JavaScriptSerializer();
 
@@ -87,7 +87,7 @@ namespace CourseWebApp.Controllers
         {
             try
             {
-                NSchoolDBContext dbContext = new NSchoolDBContext();
+                NSchoolEntities dbContext = new NSchoolEntities();
 
                 //get all course having id
                 var course_to_del = dbContext.courses.Where(e => e.id == id);
@@ -115,7 +115,7 @@ namespace CourseWebApp.Controllers
 
                 int[] idArray = JsonConvert.DeserializeObject<int[]>(JSONstring);
 
-                NSchoolDBContext dbContext = new NSchoolDBContext();
+                NSchoolEntities dbContext = new NSchoolEntities();
 
                 foreach(int id in idArray)
                 {

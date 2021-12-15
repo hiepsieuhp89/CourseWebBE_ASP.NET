@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\.Net\CourseWebApp\Models\CourseDataModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\WebApps\CourseWebBE_ASP.NET\Models\course.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

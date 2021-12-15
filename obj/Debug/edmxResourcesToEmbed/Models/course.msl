@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="NSchoolModelStoreContainer" CdmEntityContainer="NSchoolDBContext">
+  <EntityContainerMapping StorageEntityContainer="NSchoolDBContextStoreContainer" CdmEntityContainer="NSchoolEntities">
     <EntitySetMapping Name="courses">
-      <EntityTypeMapping TypeName="NSchoolModel.cours">
+      <EntityTypeMapping TypeName="NSchoolDBContext.cours">
         <MappingFragment StoreEntitySet="courses">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="code" ColumnName="code" />
           <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="description" ColumnName="description" />
           <ScalarProperty Name="year" ColumnName="year" />
           <ScalarProperty Name="actor" ColumnName="actor" />
+          <ScalarProperty Name="description" ColumnName="description" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
