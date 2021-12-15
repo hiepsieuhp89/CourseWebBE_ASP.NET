@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="67c3050f57dc4c73a0a385d82f3d4d18" Name="Diagram1">
-        <EntityTypeShape EntityType="NSchoolModel.cours" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="25e470ed9b5b409e8d34b922912f8a82" Name="Diagram1">
+        <EntityTypeShape EntityType="NSchoolDBContext.cours" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -293,22 +293,22 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\cours.cs">
-      <DependentUpon>CourseDataModel.tt</DependentUpon>
+      <DependentUpon>course.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CourseDataModel.Context.cs">
+    <Compile Include="Models\course.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CourseDataModel.Context.tt</DependentUpon>
+      <DependentUpon>course.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CourseDataModel.cs">
+    <Compile Include="Models\course.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CourseDataModel.tt</DependentUpon>
+      <DependentUpon>course.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\CourseDataModel.Designer.cs">
+    <Compile Include="Models\course.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CourseDataModel.edmx</DependentUpon>
+      <DependentUpon>course.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -321,15 +321,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\CourseDataModel.Context.tt">
+    <Content Include="Models\course.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CourseDataModel.edmx</DependentUpon>
-      <LastGenOutput>CourseDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>course.edmx</DependentUpon>
+      <LastGenOutput>course.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\CourseDataModel.tt">
+    <Content Include="Models\course.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CourseDataModel.edmx</DependentUpon>
-      <LastGenOutput>CourseDataModel.cs</LastGenOutput>
+      <DependentUpon>course.edmx</DependentUpon>
+      <LastGenOutput>course.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -352,12 +352,12 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\CourseDataModel.edmx">
+    <EntityDeploy Include="Models\course.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CourseDataModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>course.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\CourseDataModel.edmx.diagram">
-      <DependentUpon>CourseDataModel.edmx</DependentUpon>
+    <Content Include="Models\course.edmx.diagram">
+      <DependentUpon>course.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
